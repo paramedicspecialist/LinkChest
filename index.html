@@ -26,8 +26,8 @@
     </section>
     <!-- End of Parallax Pixel Background Animation -->
     
-    <!-- Share Button Start-->
-    <!-- Share Button HTML from LinkStack https://github.com/LinkStackOrg/LinkStack/blob/ccf5e7ad13560882d2de3654b7cebdefa5be6e86/resources/views/littlelink.blade.php#L216 -->
+    <!-- Share Button HTML Start -->
+    <!-- From LinkStack https://github.com/LinkStackOrg/LinkStack/blob/ccf5e7ad13560882d2de3654b7cebdefa5be6e86/resources/views/littlelink.blade.php#L216 -->
     <div align="right" class="sharediv">
     <div>
     <span class="sharebutton button-hover icon-hover share-button" data-share="" tabindex="0" role="button" aria-label="Share this page" id="shareButton">
@@ -36,41 +36,8 @@
     </span>
     </div>
     </div>
-	  
-    <script>
-    // Share Button JS from LinkStack - https://github.com/LinkStackOrg/LinkStack/blob/ccf5e7ad13560882d2de3654b7cebdefa5be6e86/resources/views/littlelink.blade.php#L227C1-L227C2
-		document.addEventListener('DOMContentLoaded', function () {
-		  // Get the current URL
-		  var currentUrl = window.location.href;
-		
-		  const shareButtons = document.querySelectorAll('.share-button');
-		  shareButtons.forEach(button => {
-		    // Update the data-share attribute with the current URL
-		    button.setAttribute('data-share', currentUrl);
-		
-		    button.addEventListener('click', () => {
-		      const valueToShare = button.dataset.share;
-		      if (navigator.share) {
-		        navigator.share({
-		          title: "Share this page",
-		          url: valueToShare
-		        })
-		          .catch(err => console.error('Error:', err));
-		      } else {
-		        navigator.clipboard.writeText(valueToShare)
-		          .then(() => {
-		            alert("URL has been copied to your clipboard!");
-		          })
-		          .catch(err => {
-		            alert('Error', err);
-		          });
-		      }
-		    });
-		  });
-		});
-    </script>
-    <!--Share Button End-->
-    
+	<!-- Share Button HTML End -->
+	
     <a id="profilePicture" href="#popup">
       <img src="https://is.gd/replace_with_your_profile_pic" alt="Profile Picture">
     </a>
@@ -118,7 +85,7 @@
       #YourHashtagHere❤
     </div>
 
-    <!-- JS Patch for Parallax Stars on Ultrawide Displays by Pkrakmo -->
+    <!-- JS Patch for Parallax Stars on Ultrawide Displays by Pkrakmo Start -->
     <script>
     // From https://github.com/johnggli/linktree/pull/11
     // Thanks to Pkrakmo https://github.com/Pkrakmo
@@ -161,6 +128,42 @@
 	      addCSS(`#stars3{ box-shadow:${stars3}}`)
 	      addCSS(`#stars3:after{ box-shadow:${stars3}}`)	    
     </script>
-	  
+    <!-- JS Patch for Parallax Stars on Ultrawide Displays by Pkrakmo End -->
+
+    <!--Share Button JS Start-->
+    <script>
+    // From LinkStack - https://github.com/LinkStackOrg/LinkStack/blob/ccf5e7ad13560882d2de3654b7cebdefa5be6e86/resources/views/littlelink.blade.php#L227C1-L227C2
+		document.addEventListener('DOMContentLoaded', function () {
+		  // Get the current URL
+		  var currentUrl = window.location.href;
+		
+		  const shareButtons = document.querySelectorAll('.share-button');
+		  shareButtons.forEach(button => {
+		    // Update the data-share attribute with the current URL
+		    button.setAttribute('data-share', currentUrl);
+		
+		    button.addEventListener('click', () => {
+		      const valueToShare = button.dataset.share;
+		      if (navigator.share) {
+		        navigator.share({
+		          title: "Share this page",
+		          url: valueToShare
+		        })
+		          .catch(err => console.error('Error:', err));
+		      } else {
+		        navigator.clipboard.writeText(valueToShare)
+		          .then(() => {
+		            alert("URL has been copied to your clipboard!");
+		          })
+		          .catch(err => {
+		            alert('Error', err);
+		          });
+		      }
+		    });
+		  });
+		});
+   </script>
+   <!--Share Button JS End-->
+	
   </body>
 </html>
