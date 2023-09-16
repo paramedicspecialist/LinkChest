@@ -10,7 +10,7 @@
   
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/paramedicspecialist/LinkChest?color=04D361&labelColor=000000">
   
-  <a href="https://paramedicspecialist.github.io/LinkChest/commits/master">
+  <a href="https://github.com/paramedicspecialist/LinkChest/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/paramedicspecialist/LinkChest?color=04D361&labelColor=000000">
   </a>
 </p>
