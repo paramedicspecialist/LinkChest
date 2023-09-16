@@ -49,29 +49,34 @@ body {
     padding: 0;	
 }
 
-#links {
-    max-width: 675px;
-    width: auto;
-    display: block;
-    margin: 27px auto;
+.linkLogo {	
+    font-size: 1.2rem !important;	
+    vertical-align: text-bottom;	
 }
 
-.link {
-    position: relative;
-    background-color: transparent;
-    color: var(--accentColor);
-    border: solid var(--accentColor) 2px;
-    border-radius: 10px;
-    font-size: 1rem;
-    text-align: center;
-    display: block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 10px; /* 17px */
-    text-decoration: none;
-    /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
-    -webkit-tap-highlight-color: transparent;
+#links {	
+    max-width: 600px;	
+    width: auto;	
+    display: block;	
+    margin: 47px auto;	
+}
+
+.link {	
+    position: relative;	
+    background-color: transparent;	
+    color: var(--accentColor);	
+    border: solid var(--accentColor) 2px;	
+    border-radius: 10px;	
+    font-size: 1.02rem;	
+    text-align: center;	
+    display: block;	
+    margin-left: 10px;	
+    margin-right: 10px;	
+    margin-bottom: 15px;	
+    padding: 12px; /* 17px */	
+    text-decoration: none;	
+    /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */	
+    -webkit-tap-highlight-color: transparent;	
 }
 
 @media (hover: hover) {
