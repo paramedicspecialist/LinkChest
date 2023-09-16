@@ -35,16 +35,18 @@ body {
     -webkit-tap-highlight-color: transparent;	
 }
 
-#userName {
-    color: var(--accentColor);
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.25;
-    display: block;
-    font-family: var(--font);
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
+#userName {	
+    color: var(--accentColor);	
+    font-size: 48px;	
+    font-weight: normal;	
+    line-height: 96px;	
+    display: block;	
+    font-family: var(--font);	
+    width: 100%;	
+    text-align: center;	
+    text-decoration: none;	
+    margin: 0;	
+    padding: 0;	
 }
 
 #links {
