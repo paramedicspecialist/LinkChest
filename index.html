@@ -13,6 +13,10 @@
     
     <!-- Core theme CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS Patch for Parallax Stars on Ultrawide Displays by Pkrakmo -->
+    <script src="./mods/ultrawide-parallax-stars-patch.js"></script>
+    
   </head>
 
   <body>
@@ -23,6 +27,37 @@
       <div id="stars3"></div>
     </section>
     <!-- End of Parallax Pixel Background Animation -->
+
+    <!-- Share Button -->
+    <div align="right" class="sharediv">
+    <div>
+    <span class="sharebutton button-hover icon-hover share-button" data-share="" tabindex="0" role="button" aria-label="Share this page" id="shareButton">
+    <i style="color: black;" class="fa-solid fa-share sharebutton-img share-icon hvr-icon"></i>
+    <span class="sharebutton-mb">Share</span>
+    </span>
+    </div>
+    </div>
+
+    <script src="./mods/share-button.js"></script>
+    
+    <a id="profilePicture" href="#popup">
+      <img src="https://is.gd/replace_with_your_profile_pic" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://is.gd/replace_with_your_profile_pic" target="_blank">
+            <img src="https://is.gd/replace_with_your_profile_pic" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          Your Quote Goes Here!
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+	<!--Share Button End-->
 
     <a id="profilePicture" href="#popup">
       <img src="https://avatars0.githubusercontent.com/u/43749971" alt="Profile Picture">
