@@ -25,14 +25,14 @@ body {
     position: relative;	
 }
 
-#profilePicture, #profilePicture img {
-    position: relative;
-    width: 96px;
-    height: 96px;
-    display: block;
-    margin: 40px auto 20px;
-    border-radius: 50%;
-    -webkit-tap-highlight-color: transparent;
+#profilePicture, #profilePicture img {	
+    position: relative;	
+    width: 128px;	
+    height: 128px;	
+    display: block;	
+    margin: 24px auto 4px;	
+    border-radius: 50%;	
+    -webkit-tap-highlight-color: transparent;	
 }
 
 #userName {
