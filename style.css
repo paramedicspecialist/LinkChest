@@ -54,12 +54,23 @@ body {
     vertical-align: text-bottom;	
 }
 
+/*--- If Using Social Icons ---*/
+
+#links {	
+    max-width: 600px;	
+    width: auto;	
+    display: block;	
+    margin: 31px auto 40px auto;	
+}
+
+/*--- If Not Using Social Icons
 #links {	
     max-width: 600px;	
     width: auto;	
     display: block;	
     margin: 47px auto;	
 }
+ ---*/
 
 .link {	
     position: relative;	
@@ -931,3 +942,20 @@ sharebutton:hover,
       margin-right: auto;
      }
    }
+
+/*-- Social Icons --*/
+.social-icon {
+  font-size: 30px;
+  padding: 10px;
+}
+    
+.social-icon-div {
+  text-align: center !important;
+}
+    
+.social-icon{color:#fff;
+}
+
+.social-icon:hover {
+  color: #223344;
+}
